@@ -1,0 +1,42 @@
+{
+  "ticker": "AAPL",
+  "feature_cols": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "MA5",
+    "MA20",
+    "RSI",
+    "BB_Upper",
+    "BB_Lower",
+    "Daily_Return",
+    "Price_to_Volume_Ratio"
+  ],
+  "look_back": 60,
+  "n_lag_close": 5,
+  "train_rows": 869,
+  "val_rows": 124,
+  "test_rows": 249,
+  "metrics": [
+    {
+      "Model": "LSTM",
+      "RMSE": 21.3797,
+      "MAE": 17.7427,
+      "R2": 0.493
+    },
+    {
+      "Model": "Random Forest",
+      "RMSE": 53.836,
+      "MAE": 45.0267,
+      "R2": -2.2145
+    },
+    {
+      "Model": "Linear Regression",
+      "RMSE": 5.0594,
+      "MAE": 3.7121,
+      "R2": 0.9716
+    }
+  ]
+}
